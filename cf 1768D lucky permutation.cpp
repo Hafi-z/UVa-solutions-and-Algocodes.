@@ -54,6 +54,8 @@ int main()
         //debug(ok)
         ans=n-(ok-1);
         ///min swaps req to sort array is n-number of cycles;
+        ///n-number of cycles is same as sum of each cycle size-1;
+        ///for the above line=> https://www.geeksforgeeks.org/minimum-number-swaps-required-sort-array/
         for(int i=1;i<n;i++){//debug(c[i])
             if(c[i]==c[i+1]){
                 ans-=1;
